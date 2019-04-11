@@ -16,11 +16,21 @@ public class FizzBuzzTest {
 
     @Test
     public void should1Return1(){
-        assertThat("1").isEqualTo(fizzBuzz.genere(1));
+        assertThat("1").isEqualTo(fizzBuzz.generate(1));
     }
 
     @Test
     public void should2Return2(){
-        assertThat("2").isEqualTo(fizzBuzz.genere(2));
+        assertThat("2").isEqualTo(fizzBuzz.generate(2));
+    }
+
+    @Test
+    public void should3ReturnFizz(){
+        assertThat("Fizz").isEqualTo(fizzBuzz.generate(3));
+    }
+
+    @Test
+    public void should5ReturnBuzz(){
+        assertThat("Buzz").isEqualTo(fizzBuzz.generate(5));
     }
 }
