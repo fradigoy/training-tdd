@@ -1,12 +1,21 @@
 package fr.fradigoy;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 public class FizzBuzzTest {
 
     private FizzBuzz fizzBuzz;
-    @Test
-    public void avantChaqueTest(){
+
+    @BeforeEach
+    public void beforeEachTest(){
          fizzBuzz = new FizzBuzz();
+    }
+
+    @Test
+    public void should1Return1(){
+        assertThat("1").isEqualTo(fizzBuzz.genere());
     }
 }
