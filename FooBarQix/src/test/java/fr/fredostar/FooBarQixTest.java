@@ -21,9 +21,9 @@ public class FooBarQixTest {
     @Test void should2Return2(){
         assertThat("2").isEqualTo(fooBarQix.generate(2));
     }
-    @Test void shouldNumberDivisible3ReturnFoo(){
+    @Test void shouldNumberDivisible3AndContains3ReturnFoo(){
         assertThat("Foo").isEqualTo(fooBarQix.generate(3));
     }
-    
+
 
 }
