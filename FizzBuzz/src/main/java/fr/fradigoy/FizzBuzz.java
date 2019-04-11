@@ -3,10 +3,8 @@ package fr.fradigoy;
 public class FizzBuzz {
     public String genere(int number) {
 
-        if(number == 2){
-            return "2";
-        }
+        String result = String.valueOf(number);
 
-        return "1";
+        return result;
     }
 }

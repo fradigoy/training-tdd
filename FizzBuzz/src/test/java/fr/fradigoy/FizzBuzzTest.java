@@ -16,7 +16,7 @@ public class FizzBuzzTest {
 
     @Test
     public void should1Return1(){
-        assertThat("1").isEqualTo(fizzBuzz.genere(2));
+        assertThat("1").isEqualTo(fizzBuzz.genere(1));
     }
 
     @Test
