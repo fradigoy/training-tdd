@@ -37,4 +37,8 @@ public class FizzBuzzTest {
     @Test void should9ReturnFizz(){
         assertThat("Fizz").isEqualTo(fizzBuzz.generate(9));
     }
+
+    @Test void should10ReturnBuzz(){
+        assertThat("Buzz").isEqualTo(fizzBuzz.generate(10));
+    }
 }
